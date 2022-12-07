@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['Inter'],
+        mulish: ['Mulish'],
+        openSans: ['Open Sans'],
       },
     },
   },

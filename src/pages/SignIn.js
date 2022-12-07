@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Homepage from './Homepage'
+// import Homepage from './Homepage'
 
 
 class SignIn extends Component {
     render() {
         return (
             // <Router>
-                <div className='grid grid-cols-[850px_minmax(100px,_1fr)_100px] gap-x-7 h-screen w-full font-inter justify-evenly'>
-                        <section className='bg-indigo-800 opacity-80 flex flex-col justify-center items-center'>
-                            <img src={require('../Assets/Image/tickitz1.png')} alt="Backgroun"className='w-2/4'/>
-                            <span className='text-white text-xl'>wait, watch, wow!</span>
-                        </section>
+                <div className='grid grid-cols-[800px_minmax(100px,_1fr)_100px]  gap-x-7 h-screen w-full font-inter justify-evenly'>
+                <section className="bg-[url('../../Assets/Image/image1.png')] bg-auto bg-indigo-500">
+                    <div className='bg-blue-800/50 w-full h-full flex flex-col justify-center items-center'>
+                        <img src={require('../Assets/Image/tickitz1.png')} alt="Backgroun" className='w-2/4' />
+                        <span className='text-white text-4xl'>wait, watch, wow!</span>
+                    </div>
+                </section>
                         <section className='pl-12 m-auto'>
                                 <div className=' headerForm'>
                                     <h2 className='text-3xl font-bold'>Sign In</h2>
@@ -21,7 +23,7 @@ class SignIn extends Component {
                                 </div>
                                 <form className='mt-14 m-auto'>
                                     <label class="block">
-                                        <div className='pb-5'>
+                                        <div className='pb-5'>Open sans
                                             <label className='flex flex-col lebel mb-5'  for="email">Email</label>
                                             <input type="email" name='peer-invalid:visible email' className='outline-none focus:ring-2 border-2 border-gray-300 rounded h-14 w-full pl-4' id='email' placeholder='Write your email'/>
                                         </div>
@@ -38,9 +40,7 @@ class SignIn extends Component {
                             </div>
                         </section>
                 </div>
-            //     <Route path="/" Component={Homepage} />
-            //     <Route path="/Homepage" Component={SignIn} />
-            // </Router>
+
         )
     }
 }

@@ -4,3 +4,19 @@
 
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+
+
+
+/* class */
+
+.month {
+    @apply border-2 rounded border-[#5F2EEA] w-[10em] p-2 h-10 flex justify-center cursor-pointer font-mulish items-center font-medium hover:bg-[#5F2EEA] hover:text-[#fff] hover:scale-[1.1];
+}
+
+.flexSocial {
+    @apply flex gap-4 mt-5;
+}

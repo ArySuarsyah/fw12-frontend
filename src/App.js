@@ -1,5 +1,4 @@
-// import logo from './logo.svg';
-// import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import SignIn from './pages/SignIn.js';
 import Homepage from './pages/Homepage.js';
 
@@ -8,10 +7,12 @@ import Homepage from './pages/Homepage.js';
 
 function App() {
   return (
-    <div className="App">
-      {/* <SignIn /> */}
-      <Homepage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/signin' element={<SignIn />} />
+      </Routes>
+    </BrowserRouter>
   )
 };
 
