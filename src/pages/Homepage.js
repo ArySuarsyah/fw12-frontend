@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import Movielist from "./Movielist";
+import Footer from "./component/Footer";
+import Header from "./component/Header";
+import Movielist from "./component/Movielist";
 
 class Homepage extends Component{
     render() {
@@ -25,11 +25,27 @@ class Homepage extends Component{
                     <div className="flex flex-row text-blue-700 justify-between bg-white my-5 px-8 font-semibold cursor-pointer px-14">
                         <div>
                             <span className="hover:scale-[1.1] font-mulish drop-shadow-xl cursor-pointer">Now Showing</span>
-                            <hr className="h-[3px] w-20 rounded rounded-l-50 rounded-r-50 bg-blue-600 m-auto"/>
+                            <hr className="h-[font-mulish3px] w-20 rounded rounded-l-50 rounded-r-50 bg-blue-600 m-auto"/>
                         </div>
                         <span className="hover:scale-[1.1] font-mulish drop-shadow-xl cursor-pointer">view all</span>
                     </div>
                     <Movielist />
+                    {/* <div className="inline-block p-8 m-3 w-[13rem]  rounded border-2 border-[#dedede] bg-neutral-100 relative overflow-y-hidden text-center movieParent">
+                        <img src={picture} alt={movies.title} className="w-40 rounded m-auto" />
+                        <div className="grid grid-rows-3 grid grid-rows-[1fr_minmax(90px,_1fr)_0px]">
+                            <div className="flex justify-center items-center font-bold text-[14px] font-mulish w-40 text-center h-20 whitespace-normal m-auto">
+                            {movies.title}
+                            </div>
+                            <div>
+                                <span className="font-mulish">
+                                    genre
+                                </span>
+                            </div>
+                            <div className="self-end">
+                                <button className="font-mulish border-[1px] rounded border-blue-600 w-40 h-9 text-sm text-blue-500 bg-[#dedede]">Detail</button>
+                            </div>
+                        </div>
+                    </div> */}
                 </section>
                 <section>
                     <div className="flex flex-row text-blue-700 justify-between bg-white my-5 px-8 font-semibold cursor-pointer px-14">
@@ -41,7 +57,7 @@ class Homepage extends Component{
                     <div>
                     </div>
                     <div className="bg-white">
-                        <div className="flex gap-4 h-16 w-[70rem] text-blue-800 mx-14 w-[77rem] mb-9">
+                        <div className="flex gap-4 h-16 w-[75rem] m-auto text-blue-800 w-[77rem] mb-9">
                             <div className="month">January</div>
                             <div className="month">February</div>
                             <div className="month">March</div>
@@ -64,10 +80,10 @@ class Homepage extends Component{
                         <h2 className="text-[#5F2EEA] text-4xl font-bold font-mulish">Moviegoers</h2>
                     </div>
                     <div>
-                        <input type="text" className="h-11 border-[2px] border-slate-200 rounded p-2 focus:outline-none]" />
-                        <span className="bg-[#5F2EEA] text-white p-3 m-2 rounded-[4px] hover:scale-[2] cursor-pointer">Join now</span>
+                        <input type="text" className="h-11 border-[2px] border-slate-200 rounded p-2 outline-none" />
+                        <span className="bg-[#5F2EEA] text-white p-3 m-2 rounded-[4px] hover:scale-[2] cursor-pointer font-mulish">Join now</span>
                     </div>
-                    <p className="w-[28rem] text-[#6E7191] text-[14px]">By joining you as a Tickitz member, we will always send you the latest updates via email.</p>
+                    <p className="w-[28rem] text-[#6E7191] text-[14px] font-mulish">By joining you as a Tickitz member, we will always send you the latest updates via email.</p>
                     <div>
                     </div>
                 </section>
@@ -75,6 +91,6 @@ class Homepage extends Component{
             </div>
         )
     }
-};  
+};
 
 export default Homepage;

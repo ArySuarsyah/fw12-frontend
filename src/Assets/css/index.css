@@ -14,9 +14,51 @@
 /* class */
 
 .month {
-    @apply border-2 rounded border-[#5F2EEA] w-[10em] p-2 h-10 flex justify-center cursor-pointer font-mulish items-center font-medium hover:bg-[#5F2EEA] hover:text-[#fff] hover:scale-[1.1];
+    @apply border-2 rounded border-[#5F2EEA] w-[15em] p-2 h-10 flex justify-center cursor-pointer font-mulish items-center font-medium hover:bg-[#5F2EEA] hover:text-[#fff] hover:scale-[1.1];
 }
 
 .flexSocial {
     @apply flex gap-4 mt-5;
+}
+
+.circle {
+    @apply flex border-[1px] border-white font-mulish text-white w-7 h-7 rounded-[50%] justify-center items-center hover:bg-white hover:text-[#280240];
+}
+
+.line {
+    @apply border-l-[2px] h-5 ml-[13px];
+}
+
+.center {
+    @apply flex items-center gap-5;
+}
+
+.fontForgot {
+    @apply font-mulish text-slate-300;
+}
+
+.center:hover > .fontForgot {
+    color: white;
+}
+
+
+
+.seatGrid {
+    @apply grid grid-cols-8 gap-1;
+}
+
+.seatLetter {
+    @apply flex justify-center items-center;
+}
+
+.seat {
+    @apply rounded-[4px] bg-[#D6D8E7] w-9 h-9 hover:bg-blue-700;
+}
+
+.seatKey {
+    @apply rounded-[4px] w-7 h-7;
+}
+
+.seatNum {
+    @apply flex justify-center items-center;
 }

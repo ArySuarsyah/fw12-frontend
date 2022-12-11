@@ -5,7 +5,7 @@ import axios from "axios";
 function MovieGrid({movies}) {
         const picture = `https://www.themoviedb.org/t/p/w116_and_h174_face/${movies.poster_path}`
         return (
-            <div className="inline-block p-8 m-3 w-60  rounded border-2 border-[#dedede] bg-neutral-100 relative overflow-y-hidden text-center">
+            <div className="inline-block p-8 m-3 w-[13rem]  rounded border-2 border-[#dedede] bg-neutral-100 relative overflow-y-hidden text-center movieParent">
                 <img src={picture} alt={movies.title} className="w-40 rounded m-auto" />
                 <div className="grid grid-rows-3 grid grid-rows-[1fr_minmax(90px,_1fr)_0px]">
                     <div className="flex justify-center items-center font-bold text-[14px] font-mulish w-40 text-center h-20 whitespace-normal m-auto">

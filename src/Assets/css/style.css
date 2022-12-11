@@ -16,8 +16,6 @@
 
 
 
-
-
 .drop {
     /* display: none;
      */
@@ -53,7 +51,7 @@
         -ms-transform: scale(0);
         -o-transform: scale(0);
     }
-    
+
     100% {
         z-index: 1;
         display: block;
@@ -65,4 +63,8 @@
         -o-transform: scale(1);
 }
 }
+
+
+/* Movie Details */
+
 
