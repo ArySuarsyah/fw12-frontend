@@ -8,13 +8,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
 
-
-
+/*sm (640px)	max-width: 640px;
+md (768px)	max-width: 768px;
+lg (1024px)	max-width: 1024px;
+xl (1280px)	max-width: 1280px;
+2xl (1536px)	max-width: 1536px;*/
 
 /* class */
 
 .month {
-    @apply border-2 rounded border-[#5F2EEA] w-[15em] p-2 h-10 flex justify-center cursor-pointer font-mulish items-center font-medium hover:bg-[#5F2EEA] hover:text-[#fff] hover:scale-[1.1];
+    @apply flex flex-col border-[1px] rounded border-[#5F2EEA] w-[20rem] p-2 h-10 justify-center cursor-pointer font-mulish items-center font-medium hover:bg-[#5F2EEA] hover:text-[#fff] hover:scale-[1.1];
 }
 
 .flexSocial {
@@ -41,7 +44,13 @@
     color: white;
 }
 
+.inputSignUp {
+    @apply outline-none focus:ring-2 border-2 border-gray-300 rounded-[16px] h-14 w-96 pl-4 focus:border-0;
+}
 
+.inputSignIn {
+    @apply outline-none focus:ring-2 border-2 border-gray-300 rounded h-14 w-full pl-4;
+}
 
 .seatGrid {
     @apply grid grid-cols-8 gap-1;
@@ -61,4 +70,32 @@
 
 .seatNum {
     @apply flex justify-center items-center;
+}
+
+.grid-order-page {
+    @apply font-mulish text-[#14142B] grid grid-cols-[800px_minmax(200px,_1fr)_1px] mx-10 mt-10 mb-20 gap-5;
+}
+
+.movieSelected-paymentInfo {
+    @apply font-semibold w-32;
+}
+
+.orderInfo-personalInfo {
+    @apply flex flex-col w-full h-[15rem] gap-5;
+}
+
+.paymentMethod {
+    @apply flex justify-center items-center rounded-[4px] border-[1px] border-[#DEDEDE] p-5 w-[146px] h-[56px];
+}
+
+.personalInfo-input {
+    @apply border-[1px] border-[#DEDEDE] mt-3 outline-none p-5 text-[#4E4B66] h-14;
+}
+
+.details-information {
+    @apply border-[1px] border-[#DEDEDE] mt-3 outline-none p-5 text-[#4E4B66] rounded-[16px] w-full h-14;
+}
+
+.accountAndPrivacy {
+    @apply outline-none focus:ring-2 border-2 border-gray-300 rounded h-14 w-full pl-4 pr-14;
 }

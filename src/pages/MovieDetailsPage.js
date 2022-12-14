@@ -9,7 +9,7 @@ class MovieDetailsPage extends Component{
     render() {
         return (
             <Fragment>
-                <Header />
+                <Header nav1="Home" nav2="List Movie"/>
                 <MovieDetails />
                 <section className="text-center mt-10">
                     <span className="font-mulish font-bold">Showtimes and Tickets</span>

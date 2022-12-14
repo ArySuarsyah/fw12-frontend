@@ -51,18 +51,18 @@ class ResetPassword extends Component {
                         <div>
                             <label for="password" className='flex flex-col mb-5 password font-mulish'>Password</label>
                             <div className='relative w-96'>
-                                <input type="password" name='password' className='outline-none focus:ring-2 border-2 border-gray-300 rounded-[16px] h-14 w-96 pl-4 w-full password' id='password' placeholder='Write your password' />
+                                <input type="password" name='password' className='inputSignIn password' id='password' placeholder='Write your password' />
                                 <FiEye className='absolute top-5 right-5 h-5 w-5 cursor-pointer' />
                             </div>
                         </div>
                         <div className='mt-10'>
                             <label for="password" className='flex flex-col mb-5 password font-mulish'>Confirm Password</label>
                             <div className='relative w-96'>
-                                <input type="password" name='password' className='outline-none focus:ring-2 border-2 border-gray-300 rounded-[16px] h-14 w-96 pl-4 w-full password' id='password' placeholder='Write your confirm password' />
+                                <input type="password" name='password' className='inputSignIn password' id='password' placeholder='Write your confirm password' />
                                 <FiEye className='absolute top-5 right-5 h-5 w-5 cursor-pointer' />
                             </div>
                         </div>
-                        <button className='bg-blue-500 rounded h-11 w-96 mt-9 text-white w-full font-mulish hover:scale(1.1)' type='button'>Sign In</button>
+                        <button className='bg-blue-500 rounded h-11 mt-9 text-white w-full font-mulish hover:scale(1.1)' type='button'>Sign In</button>
                     </form>
                 </section>
             </div>

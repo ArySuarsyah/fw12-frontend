@@ -7,7 +7,7 @@ class Homepage extends Component{
     render() {
         return (
             <div className="mt-0 pt-0">
-                <Header />
+                <Header nav1="Home" nav2="List Movie"/>
                 <section className="grid grid-cols-2 pt-10 font-mulish bg-white">
                     <aside className="flex flex-col justify-center font-mulish items-center text-blue-700 font-semibold gap-5">
                         <span className="text-xl font-mulish text-slate-400">
@@ -22,7 +22,7 @@ class Homepage extends Component{
                     </aside>
                 </section>
                 <section>
-                    <div className="flex flex-row text-blue-700 justify-between bg-white my-5 px-8 font-semibold cursor-pointer px-14">
+                    <div className="flex flex-row text-blue-700 justify-between bg-white my-5 font-semibold cursor-pointer px-14">
                         <div>
                             <span className="hover:scale-[1.1] font-mulish drop-shadow-xl cursor-pointer">Now Showing</span>
                             <hr className="h-[font-mulish3px] w-20 rounded rounded-l-50 rounded-r-50 bg-blue-600 m-auto"/>
@@ -48,7 +48,7 @@ class Homepage extends Component{
                     </div> */}
                 </section>
                 <section>
-                    <div className="flex flex-row text-blue-700 justify-between bg-white my-5 px-8 font-semibold cursor-pointer px-14">
+                    <div className="flex flex-row text-blue-700 justify-between bg-white my-5 font-semibold cursor-pointer px-14">
                         <div>
                             <span className="font-mulish text-lg hover:scale-[1.1] drop-shadow-xl cursor-pointer text-black">Upcoming Movies</span>
                         </div>
@@ -57,19 +57,21 @@ class Homepage extends Component{
                     <div>
                     </div>
                     <div className="bg-white">
-                        <div className="flex gap-4 h-16 w-[75rem] m-auto text-blue-800 w-[77rem] mb-9">
-                            <div className="month">January</div>
-                            <div className="month">February</div>
-                            <div className="month">March</div>
-                            <div className="month">April</div>
-                            <div className="month">May</div>
-                            <div className="month">June</div>
-                            <div className="month">July</div>
-                            <div className="month">August</div>
-                            <div className="month">September</div>
-                            <div className="month">October</div>
-                            <div className="month">November</div>
-                            <div className="month">December</div>
+                        <div className="mb-9 md:overflow-x-scroll ">
+                            <div className="flex items-center gap-4 h-16 m-auto text-blue-800">
+                                <div className="month">January</div>
+                                <div className="month">February</div>
+                                <div className="month">March</div>
+                                <div className="month">April</div>
+                                <div className="month">May</div>
+                                <div className="month">June</div>
+                                <div className="month">July</div>
+                                <div className="month">August</div>
+                                <div className="month">September</div>
+                                <div className="month">October</div>
+                                <div className="month">November</div>
+                                <div className="month">December</div>
+                            </div>
                         </div>
                         <Movielist />
                     </div>

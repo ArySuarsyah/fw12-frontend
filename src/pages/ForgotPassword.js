@@ -50,7 +50,7 @@ class ForgotPassword extends Component {
                     <form className='mt-12 m-auto'>
                         <div className='pb-5'>
                             <label className='flex flex-col mb-5 font-mulish'  for="email">Email</label>
-                            <input type="email" name='peer-invalid:visible email' className='outline-none focus:ring-2 border-2 border-gray-300 rounded h-14 w-full pl-4' id='email' placeholder='Write your email'/>
+                            <input type="email" name='email' className='inputSignIn' id='email' placeholder='Write your email'/>
                         </div>
                         <button className='bg-blue-500 rounded h-11 w-96 mt-9 text-white w-full font-mulish hover:scale(1.1)' type='button'>Sign In</button>
                     </form>

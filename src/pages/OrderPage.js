@@ -6,10 +6,10 @@ class OrderPage extends Component {
     render() {
         return (
             <Fragment>
-                <Header />
-                <section className="font-mulish text-[#14142B] grid grid-cols-[800px_minmax(200px,_1fr)_1px] mx-10 my-7 gap-5">
+                <Header nav1="Home" nav2="List Movie"/>
+                <section className="grid-order-page">
                     <div className="flex flex-col">
-                        <span className="font-semibold hover:text-blue-700 w-32 ">Movie Selected</span>
+                        <span className="movieSelected-paymentInfo">Movie Selected</span>
                         <div className="flex justify-between items-end text-[#000] ml-10 mr-5  my-10 ">
                             <span>Spider-Man: Homecoming</span>
                             <span className="text-[14px] font-semibold hover:text-[#5F2EEA]">Change Movie</span>
@@ -173,16 +173,16 @@ class OrderPage extends Component {
                             </div>
                         </div>
                         <div className="flex flex-row justify-between">
-                            <button type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white">Change your movie</button>
-                            <button type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white">Checkout now</button>
+                            <button type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">Change your movie</button>
+                            <button type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">Checkout now</button>
                         </div>
                     </div>
-                    <div>
+                    <div className="">
                         <span className="font-semibold">Order info</span>
                         <div className="mt-10 flex flex-col items-center">
                             <img src={require('../Assets/Image/cineOne21.png')} alt="" />
                             <span className="text-[#14142B] w-40  my-5 font-semibold text-center">CineOne21 Cinema</span>
-                            <div className=" flex flex-col w-full h-[15rem] gap-5">
+                            <div className="orderInfo-personalInfo">
                                 <div className="flex justify-between text-[14px]">
                                     <span className="text-[#6B6B6B]">Movie selected</span>
                                     <span className="text-[#14142B]">Spider-Man: Homecoming</span>
