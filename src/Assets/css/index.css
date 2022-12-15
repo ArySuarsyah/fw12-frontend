@@ -44,6 +44,10 @@ xl (1280px)	max-width: 1280px;
     color: white;
 }
 
+.labelInput {
+    @apply flex flex-col mb-5 font-mulish;
+}
+
 .inputSignUp {
     @apply outline-none focus:ring-2 border-2 border-gray-300 rounded-[16px] h-14 w-96 pl-4 focus:border-0;
 }

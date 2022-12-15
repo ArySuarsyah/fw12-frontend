@@ -1,12 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class InputEmail extends Component {
-    render() {
+const InputEmail = (props) => {
+
         return (
             <>
-                <label for="email" className='flex flex-col mb-5 font-mulish'>Email</label>
-                <input type="email" name='email' className='input' id='email' placeholder='Write your email'/>
+                <label htmlFor="email" className={props.labelClass}>Email</label>
+                <input type="email" name='email' className={props.emailClass} id='email' placeholder='Write your email'/>
             </>
         )
     }
-}
+
+
+export default InputEmail;

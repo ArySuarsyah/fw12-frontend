@@ -4,8 +4,8 @@ export default class InputPhone extends Component {
     render() {
         return (
             <>
-                <label for="phone" className='flex flex-col mb-5 font-mulish'>Phone Number</label>
-                <input type="tel" name='phone' className='input' id='phone' placeholder='Write your phone number'/>
+                <label htmlFor="phone" className={this.props.labelClass}>Phone Number</label>
+                <input type="tel" name='phone' className={this.props.phoneClass} id='phone' placeholder='Write your phone number'/>
             </>
         )
     }

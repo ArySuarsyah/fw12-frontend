@@ -1,16 +1,20 @@
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import React, { Fragment } from "react";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 
 const OrderPage = () => {
 
-    // const navigate = useNavigate;
+    const navigate = useNavigate();
 
 
-    // const payment = () => {
-    //     navigate('/payment');
-    // }
+    const payment = () => {
+        navigate('/payment');
+    }
+
+    const changeMovie = () => {
+        navigate('/view')
+    }
 
 
 
@@ -190,14 +194,18 @@ const OrderPage = () => {
                         </div>
                     </div>
                     <div className="flex flex-row justify-between">
-                        <a href="./view"><button type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">
+                        <button
+                            onClick={changeMovie}
+                            type="submit"
+                            className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">
                             Change your movie
-                        </button></a>
-                        <a href="./Payment"><button
+                        </button>
+                        <button
+                            onClick={payment}
                             type="button"
                             className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">
                             Checkout now
-                        </button></a>
+                        </button>
                     </div>
                 </div>
                 <div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FiEyeOff } from "react-icons/fi";
+import InputEmail from './component/inputFormComponent/InputEmail';
+import InputPassword from './component/inputFormComponent/InputPassword';
 
 
 const SignIn = () => {
@@ -36,7 +37,7 @@ const SignIn = () => {
                     <span className='text-white text-4xl'>wait, watch, wow!</span>
                 </div>
             </section>
-            <section className='pl-9 m-auto'>
+            <section className='pl-16 m-auto'>
                 <div className="mt-10">
                     <h2 className='text-3xl mb-2 font-bold font-mulish'>Sign In</h2>
                     <span className='font-lg text-slate-400 font-mulish'>
@@ -50,22 +51,18 @@ const SignIn = () => {
                     <span>Wrong password or email</span>
                 </div>)}
                 <form onSubmit={login} className='mt-12 m-auto'>
-                    <div className="block">
+                    <div>
                         <div className='pb-5'>
-                            <label className='flex flex-col mb-5 font-mulish'  htmlFor="email">Email</label>
-                            <input
-                                type="email"
-                                name='email'
-                                className='inputSignIn'
-                                id='email'
-                                placeholder='Write your email' />
+                            <InputEmail
+                                labelClass='labelInput'
+                                emailClass='inputSignIn' />
                         </div>
                         <div className='relative'>
-                            <label className='flex flex-col mb-5 password font-mulish' htmlFor="password">
-                                Password
-                            </label>
-                            <input type="password" name='password' className='outline-none focus:ring-2 border-2 border-gray-300 rounded h-14 w-96 pl-4 password' id='password' placeholder='Write your password' />
-                            <FiEyeOff className='absolute h-5 w-5 top-16 right-5' />
+                            <InputPassword
+                                labelClass='labelInput'
+                                passwordClass='inputSignIn'
+                                icon='<FiEyeOff />'
+                            />
                         </div>
                         </div>
                         <button type='submit' className='bg-blue-500 rounded h-11 w-96 mt-9 text-white font-mulish hover:scale(1.1)'>Sign In</button>
