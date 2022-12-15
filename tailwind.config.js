@@ -5,11 +5,11 @@ content: [
 ],
 theme: {
     extend: {
-    fontFamily: {
-        inter: ['Inter'],
-        mulish: ['Mulish'],
-        openSans: ['Open Sans'],
-    },
+        fontFamily: {
+            inter: ['Inter'],
+            mulish: ['Mulish'],
+            openSans: ['Open Sans'],
+        },
     },
 },
 plugins: [],

@@ -62,6 +62,6 @@ const TicketStatus = (props) => {
     )
 }
 
-export default TicketStatus
+export default TicketStatus;
 
 

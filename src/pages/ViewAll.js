@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Footer from './component/Footer';
 import Header from './component/Header';
 import Movielist from './component/Movielist';
@@ -8,7 +8,7 @@ import SearchAndShort from './component/ViewAll/SearchAndShort';
 class ViewAll extends Component {
     render() {
         return (
-            <Fragment className="w-full">
+            <div className='w-full'>
                 <Header nav1="Home" nav2="List Movie"/>
                 <section>
                     <SearchAndShort />
@@ -31,7 +31,7 @@ class ViewAll extends Component {
                         <Movielist />
                 </section>
                 <Footer />
-            </Fragment>
+            </div>
         )
     }
 }

@@ -1,12 +1,26 @@
-import React, { Component } from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default class ProfilPageNav extends Component {
-    render() {
+const ProfilePageNav = () => {
+    const navigate = useNavigate;
+
+    const orderHistory = () => {
+        navigate('/order-History')
+    }
+
+        const accountSetting = () => {
+        navigate('/profile')
+    }
         return (
             <div className='flex gap-5 font-mulish items-center h-20 p-10 text-[#AAAAAA]'>
-                <span className='hover:text-[#000] hover:underline underline-offset-[34px] decoration-[#5F2EEA]'>Account Settings</span>
-                <span className='hover:text-[#000] hover:underline underline-offset-[34px] decoration-[#5F2EEA]'>Order History</span>
+                <a href="./profile"><span onClick={accountSetting} className='hover:text-[#000] hover:underline underline-offset-[34px] decoration-[#5F2EEA] cursor-pointer'>
+                    Account Settings
+                </span></a>
+                <a href='./order-history'><span onClick={orderHistory} className='hover:text-[#000] hover:underline underline-offset-[34px] decoration-[#5F2EEA] cursor-pointer'>
+                    Order History
+                </span></a>
             </div>
         )
     }
-}
+
+export default ProfilePageNav;

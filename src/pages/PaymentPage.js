@@ -1,9 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import Footer from './component/Footer';
 import Header from './component/Header';
 
-class PaymentPage extends Component {
-    render() {
+const PaymentPage = () => {
+    const navigate = useNavigate;
+
+    const prev = () => {
+        navigate('/oreder')
+    }
+
         return (
             <>
                 <Header nav1="Home" nav2="List Movie"/>
@@ -58,23 +64,23 @@ class PaymentPage extends Component {
                             <span className='text-[#A0A3BD]'>Pay via cash. See how it work</span>
                         </div>
                         <div className="flex flex-row justify-between">
-                            <button type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">Prvious step</button>
-                            <button type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">Pay your order</button>
+                            <a href="./order"><button onClick={prev} type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">Prvious step</button></a>
+                            <a href="./order-History"><button type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">Pay your order</button></a>
                         </div>
                     </section>
-                    <asside>
+                    <section>
                         <h2 className='movieSelected-paymentInfo mb-[3.8rem]'>Personal Info</h2>
                         <div>
                             <div className='flex flex-col'>
-                                <label for="fullname">Fullname</label>
+                                <label htmlFor="fullname">Fullname</label>
                                 <input type="text" id="fullname" className='personalInfo-input'/>
                             </div>
                             <div className='flex flex-col my-5'>
-                                <label for="email">Email</label>
+                                <label htmlFor="email">Email</label>
                                 <input type="email" id='email' className='personalInfo-input'/>
                             </div>
                             <div className='flex flex-col my-5'>
-                                <label for="phone">Phone Number</label>
+                                <label htmlFor="phone">Phone Number</label>
                                 <div className='flex justify-center items-center border-[1px] border-[#DEDEDE]'>
                                     <input type="text" value='+62' disabled className='text-center h-12 w-12 ' />
                                     <hr className='h-7 w-[2px] bg-[#dedede]'/>
@@ -86,13 +92,13 @@ class PaymentPage extends Component {
                                 <span className='text-[#4E4B66]'>Fill your data correctly.</span>
                             </div>
                         </div>
-                    </asside>
+                    </section>
                 </main>
                 <Footer />
             </>
         )
-    }
 }
+
 
 
 
