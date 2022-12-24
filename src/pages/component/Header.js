@@ -1,6 +1,13 @@
 import React, { Fragment } from "react";
+
 import { BsSearch } from "react-icons/bs";
+
 import { useNavigate } from "react-router-dom";
+
+
+
+
+
 
 const Header = (props) => {
     const navigate = useNavigate();
@@ -19,9 +26,9 @@ const Header = (props) => {
     return (
         <Fragment>
             <header className="flex flex-row justify-between h-20 mt-2 font-mulish bg-white">
-                <div className="flex justify-center items-end gap-20 mb-5 mt-14">
+                <div className="flex justify-center items-end lg:gap-20 mb-5 mt-14">
                     <img src={require('../../Assets/Image/TickitzBlue.png')} alt="Brand Logo" className="h-12 mx-4 border-box" />
-                    <div className="flex gap-10 text-base font-bold">
+                    <div className="hidden gap-10 text-base font-bold md:flex">
                         <span className="hover:text-blue-700 cursor-pointer hover:scale-[1.1] drop-shadow-xl font-mulish">{props.nav1}
                         </span>
                         <span onClick={nav2} className="hover:text-blue-700 cursor-pointer hover:scale-[1.1] drop-shadow-xl font-mulish">{props.nav2}
@@ -33,9 +40,9 @@ const Header = (props) => {
                     </div>
                 </div>
                 <div className="top-0 mt-2">
-                    <div className="relative flex flex-row gap-20">
-                        <div className="flex searchParent relative">
-                            <input type="text" className="border-2 h-11 outline-none rounded m-auto pl-4 pr-10 w-12 font-mulish box-border" placeholder="Search Movie Name" />
+                    <div className="relative flex flex-row md:gap-5 lg:gap-20">
+                        <div className="searchParent relative hidden md:flex lg:flex">
+                            <input type="text" className="border-2 h-11 outline-none rounded m-auto pl-4 pr-10 w-12 box-border" placeholder="Search Movie Name" />
                             <BsSearch className="absolute w-[1.5em] h-[1.5em] top-2 right-[10px] m-2" />
                         </div>
                         <div className="top-0.0 mr-11 image">

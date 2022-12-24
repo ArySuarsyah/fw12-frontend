@@ -21,11 +21,19 @@ xl (1280px)	max-width: 1280px;
 }
 
 .flexSocial {
-    @apply flex gap-4 mt-5;
+    @apply flex gap-4 mb-5 items-center;
 }
 
 .circle {
     @apply flex border-[1px] border-white font-mulish text-white w-7 h-7 rounded-[50%] justify-center items-center hover:bg-white hover:text-[#280240];
+}
+
+.active {
+    @apply flex border-[1px] border-white font-mulish text-white w-7 h-7 rounded-[50%] justify-center items-center bg-white text-[#280240];
+}
+
+.fontForgotActive {
+    @apply text-white;
 }
 
 .line {
@@ -49,7 +57,7 @@ xl (1280px)	max-width: 1280px;
 }
 
 .inputSignUp {
-    @apply outline-none focus:ring-2 border-2 border-gray-300 rounded-[16px] h-14 w-96 pl-4 focus:border-0;
+    @apply outline-none focus:ring-2 border-2 border-gray-300 rounded-[16px] h-14 w-full pl-4 focus:border-0;
 }
 
 .inputSignIn {
@@ -65,11 +73,11 @@ xl (1280px)	max-width: 1280px;
 }
 
 .seat {
-    @apply rounded-[4px] bg-[#D6D8E7] w-9 h-9 hover:bg-blue-700;
+    @apply w-5 h-5 rounded-[2px] bg-[#D6D8E7] md:w-7 md:h-7 lg:w-7 lg:h-7 hover:bg-blue-700;
 }
 
 .seatKey {
-    @apply rounded-[4px] w-7 h-7;
+    @apply rounded-[4px] w-5 h-5;
 }
 
 .seatNum {
@@ -77,11 +85,11 @@ xl (1280px)	max-width: 1280px;
 }
 
 .grid-order-page {
-    @apply font-mulish text-[#14142B] grid grid-cols-[800px_minmax(200px,_1fr)_1px] mx-10 mt-10 mb-20 gap-5;
+    @apply font-mulish text-[#14142B] lg:grid lg:grid-cols-[700px_minmax(00px,_1fr)_1px] lg:mr-10 lg:ml-5 lg:mt-10 lg:mb-20 lg:gap-5;
 }
 
 .movieSelected-paymentInfo {
-    @apply font-semibold w-32;
+    @apply font-semibold w-32 mt-5;
 }
 
 .orderInfo-personalInfo {
@@ -111,3 +119,10 @@ xl (1280px)	max-width: 1280px;
 .formDuration {
     @apply h-10 w-[8.7rem] rounded-[4px] outline-blue-500 border-[1px] border-[#dedede];
 }
+
+
+
+
+
+/* Home Page */
+

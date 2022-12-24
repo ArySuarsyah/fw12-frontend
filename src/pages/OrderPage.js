@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import React, { Fragment } from "react";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
+import SeatGrid from "./component/orderPage/SeatGrid";
 
 const OrderPage = () => {
 
@@ -23,192 +24,38 @@ const OrderPage = () => {
             <Header nav1="Home" nav2="List Movie" />
 
             <section className="grid-order-page">
-
-                <div className="flex flex-col">
-
+                <div className="flex flex-col w-full border-[1px] border-black pl-5 md:pr-16">
                     <span className="movieSelected-paymentInfo">Movie Selected</span>
-
-                    <div className="flex justify-between items-end text-[#000] ml-10 mr-5  my-10 ">
-
+                    <div className="flex justify-between my-5 items-end text-[#000] lg:ml-10 lg:mr-5 lg:my-10 ">
                         <span>Spider-Man: Homecoming</span>
                         <a href="./view"><span className="text-[14px] font-semibold hover:text-[#5F2EEA] cursor-pointer">
                             Change Movie
                         </span></a>
                     </div>
                     <span className="font-bold">Choose Your Seat</span>
-                    <div className="flex flex-col justify-center items-center  p-10">
+                    <div className="flex flex-col lg:justify-center items-center lg:p-10">
                         <div className="flex flex-col justify-center items-center ml-7">
                                 <p className="text-[#4E4B66]">Screen</p>
-                            <hr className="w-[25rem] h-[4px] bg-[#D6D8E7] my-2" />
+                            <hr className="w-72 md:w-[25rem] lg:w-[25rem] h-[4px] bg-[#D6D8E7] my-2" />
                         </div>
-                        <div className="grid grid-cols-2 w-full">
-                            <div className="seatGrid">
-                                <div className="seatLetter">A</div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter">B</div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter">C</div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter">D</div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter">E</div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter">F</div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter">G</div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div></div>
-                                <div className="seatNum">1</div>
-                                <div className="seatNum">2</div>
-                                <div className="seatNum">3</div>
-                                <div className="seatNum">4</div>
-                                <div className="seatNum">5</div>
-                                <div className="seatNum">6</div>
-                                <div className="seatNum">7</div>
-                            </div>
-                            <div className="seatGrid">
-                                <div className="seatLetter"></div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter"></div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter"></div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter"></div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter"></div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter"></div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div className="seatLetter"></div>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <span className="seat"></span>
-                                <div></div>
-                                <div className="seatNum">8</div>
-                                <div className="seatNum">9</div>
-                                <div className="seatNum">10</div>
-                                <div className="seatNum">11</div>
-                                <div className="seatNum">12</div>
-                                <div className="seatNum">13</div>
-                                <div className="seatNum">14</div>
-                            </div>
-                        </div>
-                        <div className="self-start m-10">
-                            <span className="font-semibold">Seating key</span>
-                            <div className="grid grid-cols-3 gap-5 mt-5">
-                                <div className="flex gap-5 text-[#4E4B66]">
-                                    <span className="seatKey bg-[#D6D8E7]"></span>
-                                    <span>Avaible</span>
-                                </div>
-                                <div className="flex gap-5 text-[#4E4B66]">
-                                    <span className="seatKey bg-[#5F2EEA]"></span>
-                                    <span>Selected</span>
-                                </div>
-                                <div className="flex gap-5 text-[#4E4B66]">
-                                    <span className="seatKey bg-[#6E7191]"></span>
-                                    <span>Sold</span>
-                                </div>
-                            </div>
-                        </div>
+                        <SeatGrid />
                     </div>
                     <div className="flex flex-row justify-between">
                         <button
                             onClick={changeMovie}
                             type="submit"
-                            className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">
+                            className="w-40 rounded-[2px] lg:w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">
                             Change your movie
                         </button>
                         <button
                             onClick={payment}
                             type="button"
-                            className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">
+                            className="w-40 rounded-[2px] lg:w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">
                             Checkout now
                         </button>
                     </div>
                 </div>
-                <div>
+                <div className="mt-10 mx-5 lg:mt-0 lg:mx-0 border-[1px] border-black">
                     <span className="font-semibold">Order info</span>
                     <div className="mt-10 flex flex-col items-center">
                         <img src={require('../Assets/Image/cineOne21.png')} alt="" />

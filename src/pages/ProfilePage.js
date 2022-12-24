@@ -17,14 +17,16 @@ export default class ProfilePage extends Component {
         return (
             <>
                 <Header nav1="Home" nav2="List Movie"/>
-                <section className='grid grid-cols-[400px_minmax(750px,_1fr)_100px] p-10'>
+                <section className='p-5 md:grid md:grid-cols-[400px_minmax(0px,_1fr)_00px] md:p-10 md:gap-5 lg:grid lg:grid-cols-[400px_minmax(750px,_1fr)_100px] lg:p-10'>
                     <div>
                         <Profile />
                     </div>
                     <div>
                         <ProfilPageNav />
-                        <DetailsInformation />
-                        <AccountAndPrivacy />
+                        <div className=''>
+                            <DetailsInformation />
+                            <AccountAndPrivacy />
+                        </div>
                     </div>
                 </section>
                 <Footer />

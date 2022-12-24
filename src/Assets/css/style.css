@@ -2,7 +2,7 @@
 
 /* Search */
 
-.searchParent input::placeholder {
+/* .searchParent input::placeholder {
     color: transparent;
 }
 .searchParent:hover > input {
@@ -12,34 +12,32 @@
 
 .searchParent:hover>input::placeholder {
     color: rgb(173, 173, 173);
-}
+} */
 
 
 
-.drop {
-    /* display: none;
-     */
+/* .drop {
     z-index: -1;
 }
 
 .image:hover > .drop {
     animation: 1s dropAnimation forwards;
     -webkit-animation: 1s dropAnimation forwards;
-}
+} */
 
 
-
+/* 
 @keyframes searchParent {
     0% {
         width: 3rem;
     }
 
     100% {
-        width: 20rem;
+        width: 15rem;
     }
-}
+} */
 
-
+/* 
 @keyframes dropAnimation {
     0% {
         z-index: -1;
@@ -62,7 +60,7 @@
         -ms-transform: scale(1);
         -o-transform: scale(1);
 }
-}
+} */
 
 
 /* Movie Details */

@@ -6,11 +6,11 @@ export default class AccountAndPrivacy extends Component {
     render() {
         return (
             <>
-                <div className='p-10 font-mulish'>
-                    <span className='mr-10'>Account And Privacy</span>
-                    <div className='grid grid-cols-2 gap-10 mb-10 mt-10'>
+                <div className='mt-10 font-mulish lg:p-10'>
+                    <span className='lg:mr-10'>Account And Privacy</span>
+                    <div className='flex flex-col gap-5 mt-10 lg:grid lg:grid-cols-2 lg:gap-10 lg:mb-10 lg:mt-10'>
                         <div>
-                            <label for="password" className='flex flex-col mb-5 password font-mulish'>
+                            <label for="password" className='flex flex-col mb-3 password font-mulish'>
                                 Password
                             </label>
                             <div className='relative w-full'>
@@ -19,7 +19,7 @@ export default class AccountAndPrivacy extends Component {
                             </div>
                         </div>
                         <div>
-                            <label for="password" className='flex flex-col mb-5 password font-mulish'>
+                            <label for="password" className='flex flex-col mb-3 password font-mulish'>
                                 Confirm Password
                             </label>
                             <div className='relative w-full'>
@@ -28,7 +28,7 @@ export default class AccountAndPrivacy extends Component {
                             </div>
                         </div>
                     </div>
-                    <button type='submit' className='bg-[#5F2EEA] text-white h-14 w-[16rem] rounded-[16px]'>
+                    <button type='submit' className='mt-5 w-full bg-[#5F2EEA] text-white h-14 lg:w-[16rem] rounded-[16px]'>
                             Update changes
                     </button>
                 </div>

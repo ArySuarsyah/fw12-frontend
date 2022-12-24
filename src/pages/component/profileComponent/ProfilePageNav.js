@@ -12,11 +12,11 @@ const ProfilePageNav = () => {
         navigate('/profile')
     }
         return (
-            <div className='flex gap-5 font-mulish items-center h-20 p-10 text-[#AAAAAA]'>
-                <a href="./profile"><span onClick={accountSetting} className='hover:text-[#000] hover:underline underline-offset-[34px] decoration-[#5F2EEA] cursor-pointer'>
+            <div className='flex justify-between mb-10 lg:gap-5 font-mulish md:items-center  lg:items-center lg:h-20 lg:px-10 text-[#AAAAAA]'>
+                <a href="./profile"><span onClick={accountSetting} className='hover:text-[#000] hover:underline underline-offset-[20px] decoration-[#5F2EEA] cursor-pointer'>
                     Account Settings
                 </span></a>
-                <a href='./order-history'><span onClick={orderHistory} className='hover:text-[#000] hover:underline underline-offset-[34px] decoration-[#5F2EEA] cursor-pointer'>
+                <a href='./order-history'><span onClick={orderHistory} className='hover:text-[#000] hover:underline underline-offset-[20px] decoration-[#5F2EEA] cursor-pointer'>
                     Order History
                 </span></a>
             </div>

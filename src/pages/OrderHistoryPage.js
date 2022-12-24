@@ -10,13 +10,13 @@ import Footer from './component/Footer';
 export default class OrderHistoryPage extends Component {
     render() {
         return (
-            <>
+            <div>
                 <Header nav1="Home" nav2="List Movie"/>
-                <section className='grid grid-cols-[400px_minmax(750px,_1fr)_100px] p-10'>
+                <section className='px-5 lg:grid lg:grid-cols-[400px_minmax(0px,_1fr)_1px] lg:p-10'>
                     <div>
                         <Profile />
                     </div>
-                    <div className='flex flex-col gap-10'>
+                    <div className='flex flex-col gap-10 rounded-[8px] bg-[#DEDEDE]'>
                         <ProfilePageNav />
                         <TicketHistory
                             date="Tuesday, 07 July 2020 - 04:30pm"
@@ -39,7 +39,7 @@ export default class OrderHistoryPage extends Component {
                     </div>
                 </section>
                 <Footer />
-            </>
+            </div>
         )
     };
 };

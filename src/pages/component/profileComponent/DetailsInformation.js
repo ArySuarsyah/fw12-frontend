@@ -4,12 +4,12 @@ export default class DetailsInformation extends Component {
     render() {
         return (
             <>
-                <section className='font-mulish p-10'>
+                <form className='font-mulish lg:p-10'>
                     <div className='mb-5 rounded-[24px]'>
                         <span>Details Information</span>
                         <hr className='mt-3'/>
                     </div>
-                    <div className='grid grid-cols-2 gap-10'>
+                    <div className='flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-10'>
                         <div className='flex flex-col'>
                             <label for="fullname">Fullname</label>
                             <input type="text" id="fullname" className='details-information' />
@@ -31,10 +31,10 @@ export default class DetailsInformation extends Component {
                             </div>
                         </div>
                     </div>
-                    <button type='submit' className='bg-[#5F2EEA] text-white h-14 w-[16rem] rounded-[16px]'>
+                    <button type='submit' className='w-full bg-[#5F2EEA] text-white h-14 lg:w-[16rem] rounded-[16px]'>
                         Update changes
                     </button>
-                </section>
+                </form>
             </>
         )
     }

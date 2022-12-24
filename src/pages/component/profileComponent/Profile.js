@@ -9,9 +9,9 @@ const Profile = () => {
     }
 
     return (
-        <div className='flex flex-col justify-center items-center border-[1px] border-[#DEDEDE  py-10 font-mulish w-[18rem] gap-5 rounded-[16px] ml-10'>
+        <div className='flex flex-col w-full justify-center items-center border-[1px] border-[#DEDEDE] py-10 font-mulish md:w-full lg:w-[18rem] gap-5 rounded-[16px] lg:ml-10'>
                 <span className='self-start ml-10'>INFO</span>
-                <img src={require('../../../Assets/Image/imagesProfile.jpeg')} alt="Profile" className='rounded-[50%] w-20 h-20'/>
+                <img src={require('../../../Assets/Image/imagesProfile.jpeg')} alt="Profile" className='w-32 h-32 rounded-[50%] lg:w-20 lg:h-20'/>
                 <span>Name</span>
                 <span>Admin</span>
                 <hr className='bg-[#dedede] w-full' />
