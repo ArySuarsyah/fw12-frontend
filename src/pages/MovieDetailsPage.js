@@ -19,7 +19,7 @@ class MovieDetailsPage extends Component{
                             <input type="date" value="2022-12-10" className="font-mulish focus:ring-indigo-500 focus:outline-none date focus:border-indigo-500 border-[1px] rounded-md text-sm py-2 px-3 mt-1 bg-stone-100" />
                         </div>
                         <div className="col-span-6 sm:col-span-3">
-                            <select id="city" name="city" className="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm bg-stone-100 font-mulish">
+                            <select id="city" name="city" className="mt-1 block w-full rounded-md border border-gray-300 py-3 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm bg-stone-100 font-mulish">
                                 <option disabled>City</option>
                                 <option className="font-mulish">Purwokerto</option>
                                 <option className="font-mulish">Jakarta</option>
@@ -28,7 +28,7 @@ class MovieDetailsPage extends Component{
                         </div>
                     </div>
                 </section>
-                <section className="grid grid-cols-3 gap-5 px-5 mt-32">
+                <section className="grid gap-20 lg:grid-cols-3 lg:gap-5 px-5 mt-32">
                     <BookNow
                         cinemaLogo={require('../Assets/Image/ebuId.png')}
                         cinema='Ebu.id'
@@ -115,9 +115,9 @@ class MovieDetailsPage extends Component{
                     />
                 </section>
                 <div className="flex m-auto items-center justify-center my-10">
-                    <hr className="w-[400px] h-[2px] bg-[#dedede]"/>
+                    <hr className="w-28 lg:w-[400px] h-[2px] bg-[#dedede]"/>
                     <div className="font-mulish text-[16px] text-[#5F2EEA] mx-5">View more</div>
-                    <hr className="w-[400px] h-[2px] bg-[#dedede]"/>
+                    <hr className="w-28 lg:w-[400px] h-[2px] bg-[#dedede]"/>
                 </div>
                 <Footer />
             </Fragment>

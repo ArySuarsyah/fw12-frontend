@@ -13,8 +13,8 @@ const PaymentPage = () => {
         return (
             <>
                 <Header nav1="Home" nav2="List Movie"/>
-                <main className='grid-order-page'>
-                    <section className='flex flex-col gap-5 '>
+                <main className='grid-order-page border-[1px] border-black p-5'>
+                    <section className='flex flex-col gap-5 border-[1px] border-black'>
                         <h2 className='movieSelected-paymentInfo'>Payment Info</h2>
                         <div className='grid grid-cols-2 gap-10 my-10 '>
                             <div className='text-[#6B6B6B]'>Date & time</div>
@@ -28,8 +28,8 @@ const PaymentPage = () => {
                             <div className='text-[#6B6B6B]'>Total payment</div>
                             <div>$30,00</div>
                         </div>
-                        <h2 className='font-semibold w-[30rem] my-10'>Choose a Payment Method</h2>
-                        <div className='grid grid-cols-4 gap-10 mb-10'>
+                        <h2 className='font-semibold lg:w-[30rem] my-10'>Choose a Payment Method</h2>
+                        <div className='flex flex-wrap gap-10 mb-10 justify-center lg:grid lg:grid-cols-4 '>
                             <div className='paymentMethod'>
                                 <img src={require('../Assets/Image/gpay.png')} alt="Goolge pay" />
                             </div>
@@ -57,15 +57,15 @@ const PaymentPage = () => {
                         </div>
                         <div className='flex flex-col justify-center items-center gap-5 mb-10'>
                             <div className='flex justify-center items-center gap-5'>
-                                <hr className='w-[20rem] bg-[#DEDEDE]' />
+                                <hr className='lg:w-[20rem] bg-[#DEDEDE]' />
                                 <span className='text-[#A0A3BD]'>or</span>
-                                <hr className='w-[20rem] bg-[#DEDEDE]' />
+                                <hr className='lg:w-[20rem] bg-[#DEDEDE]' />
                             </div>
                             <span className='text-[#A0A3BD]'>Pay via cash. See how it work</span>
                         </div>
-                        <div className="flex flex-row justify-between">
-                            <a href="./order"><button onClick={prev} type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">Prvious step</button></a>
-                            <a href="./order-History"><button type="submit" className="rounded-[2px] w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">Pay your order</button></a>
+                        <div className="flex flex-row justify-evenly lg:justify-between">
+                            <a href="./order"><button onClick={prev} type="submit" className="rounded-[2px] w-32 lg:w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">Prvious step</button></a>
+                            <a href="./order-History"><button type="submit" className="rounded-[2px] w-32 lg:w-[15rem] h-10 text-[#5F2EEA] hover:bg-[#5F2EEA] hover:text-white border-[1px] border-[#5F2EEA]">Pay your order</button></a>
                         </div>
                     </section>
                     <section>

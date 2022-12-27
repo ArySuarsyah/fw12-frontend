@@ -66,8 +66,8 @@ class SignUp extends Component {
                             <button className='bg-blue-500 rounded-[16px] h-11 w-full mt-9 text-white hover:scale-[1.05]' type='button'>Sign In</button>
                         </form>
                         <div className='flex flex-col ont-lg text-slate-400 text-center my-10'>
-                            <p className="hover:scale-[1.05] hover:text-blue-700 cursor-pointer">Forgot your password? <Link to="/sign-in">Reset</Link></p>
-                            <p className="hover:scale-[1.05] hover:text-blue-700 cursor-pointer">Have an account? <Link to="/sign-in">Sign In</Link></p>
+                            <p>Forgot your password? <Link to="/sign-in" className='text-blue-400 cursor-pointer'>Reset</Link></p>
+                            <p>Have an account? <Link to="/sign-in" className='text-blue-400 cursor-pointer'>Sign In</Link></p>
                         </div>
                     </section>
                 </section>

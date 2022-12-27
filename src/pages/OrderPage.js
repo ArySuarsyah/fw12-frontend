@@ -24,7 +24,7 @@ const OrderPage = () => {
             <Header nav1="Home" nav2="List Movie" />
 
             <section className="grid-order-page">
-                <div className="flex flex-col w-full border-[1px] border-black pl-5 md:pr-16">
+                <div className="flex flex-col w-full px-5 md:pr-16">
                     <span className="movieSelected-paymentInfo">Movie Selected</span>
                     <div className="flex justify-between my-5 items-end text-[#000] lg:ml-10 lg:mr-5 lg:my-10 ">
                         <span>Spider-Man: Homecoming</span>
@@ -55,7 +55,7 @@ const OrderPage = () => {
                         </button>
                     </div>
                 </div>
-                <div className="mt-10 mx-5 lg:mt-0 lg:mx-0 border-[1px] border-black">
+                <div className="mt-10 mx-5 lg:mt-0 lg:mx-0">
                     <span className="font-semibold">Order info</span>
                     <div className="mt-10 flex flex-col items-center">
                         <img src={require('../Assets/Image/cineOne21.png')} alt="" />

@@ -9,7 +9,7 @@ export default function BookNow(props) {
     }
 
     return (
-        <div className="border-[1px] box-border rounded-md py-3 px-4">
+        <div className="border-[1px] box-border rounded-md py-3 px-4 md:w-full lg:w-96">
             <div className="flex gap-5 justify-center items-center">
                 <img src={props.cinemaLogo} alt="" className="w-[15rem] h-10"/>
                 <div className="flex flex-col w-full">
@@ -19,7 +19,7 @@ export default function BookNow(props) {
                     </span>
                 </div>
             </div>
-            <hr className="w-full mt-4" />
+            <hr className="mt-4" />
             <div className="grid grid-cols-4 gap-5 mt-10">
                 <span className="font-mulish text-[14px]">{props.hour1}</span>
                 <span className="font-mulish text-[14px]">{props.hour2}</span>

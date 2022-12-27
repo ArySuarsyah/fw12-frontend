@@ -4,7 +4,7 @@ export default class SeatGrid extends Component {
     render() {
         return (
             <>
-                <div className="grid grid-cols-2 mt-5 w-full">
+                <div className="grid grid-cols-2 mt-5 w-full mr-5">
                     <div className="seatGrid">
                         <div className="seatLetter">A</div>
                         <span className="seat"></span>

@@ -25,12 +25,13 @@ xl (1280px)	max-width: 1280px;
 }
 
 .circle {
-    @apply flex border-[1px] border-white font-mulish text-white w-7 h-7 rounded-[50%] justify-center items-center hover:bg-white hover:text-[#280240];
+    @apply flex border-[1px] border-white font-mulish text-white w-7 h-7 rounded-[50%] justify-center items-center;
 }
 
-.active {
-    @apply flex border-[1px] border-white font-mulish text-white w-7 h-7 rounded-[50%] justify-center items-center bg-white text-[#280240];
+.circleActive {
+    @apply flex border-[1px] border-white font-mulish bg-white text-[#280240] w-7 h-7 rounded-[50%] justify-center items-center;
 }
+
 
 .fontForgotActive {
     @apply text-white;
@@ -69,7 +70,7 @@ xl (1280px)	max-width: 1280px;
 }
 
 .seatLetter {
-    @apply flex justify-center items-center;
+    @apply flex justify-center items-center text-xs md:text-base lg:text-base;
 }
 
 .seat {

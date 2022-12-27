@@ -4,12 +4,38 @@ import { FiEye } from "react-icons/fi";
 
 
 
-
-
-
-
-
 class ResetPassword extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            circle: 'circle',
+            fontForgot: 'fontForgot',
+            fill: 'circle',
+            fontFill: 'fontForgot'
+        }
+
+        
+    }
+        active = () => {
+            if (this.state.circle === 'circle') {
+                this.setState({
+                    circle: 'circleActive',
+                    fontForgot: 'fontForgotActive'
+                })
+            }
+        }
+    
+    fillActive = () => {
+        this.setState({
+            fill: 'circleActive',
+            fontFill: 'fontForgotActive'
+        })
+    }
+    
+
+
+
     render() {
 
         return (
@@ -27,30 +53,30 @@ class ResetPassword extends Component {
                         <div className='flex gap-5 w-92 mt-10'>
                             <div className='flex flex-col mb-5'>
                                 <div className='center'>
-                                    <div className='circle'>1</div>
-                                    <div className='fontForgot'>Fill your complete email</div>
+                                    <div className='circleActive'>1</div>
+                                    <div className='fontForgotActive'>Fill your complete email</div>
                                 </div>
                                 <div className='line'></div>
                                 <div className='center'>
-                                    <div className='circle'>2</div>
-                                    <div className='fontForgot'>Check your email</div>
+                                    <div className='circleActive'>2</div>
+                                    <div className='fontForgotActive'>Check your email</div>
                                 </div>
                                 <div className='line'></div>
                                 <div className='center'>
-                                    <div className='circle active'>3</div>
-                                    <div className='fontForgotActive'>Enter your new password</div>
+                                    <div className={this.state.fill}>3</div>
+                                    <div className={this.state.fontFill}>Enter your new password</div>
                                 </div>
                                 <div className='line'></div>
                                 <div className='center'>
-                                    <div className='circle'>4</div>
-                                    <div className='fontForgot'>Done</div>
+                                    <div className={this.state.circle}>4</div>
+                                    <div className={this.state.fontForgot}>Done</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section className='mx-5 lg:w-[50rem]'>
-                    <div className="md:mt-5">
+                    <div className="mt-16">
                         <h2 className='text-3xl mb-2 font-bold font-mulish'>Fill your complete email</h2>
                         <span className='font-lg text-slate-400 font-mulish'>
                             set your new password
@@ -60,7 +86,7 @@ class ResetPassword extends Component {
                         <div>
                             <label for="password" className='flex flex-col mb-5 password font-mulish'>Password</label>
                             <div className='relative'>
-                                <input type="password" name='password' className='inputSignIn password' id='password' placeholder='Write your password' />
+                                <input onChange={this.fillActive}type="password" name='password' className='inputSignIn password' id='password' placeholder='Write your password' />
                                 <FiEye className='absolute top-5 right-5 h-5 w-5 cursor-pointer' />
                             </div>
                         </div>
@@ -71,7 +97,7 @@ class ResetPassword extends Component {
                                 <FiEye className='absolute top-5 right-5 h-5 w-5 cursor-pointer' />
                             </div>
                         </div>
-                        <button className='bg-blue-500 rounded h-11 mt-16 text-white w-full font-mulish hover:scale-[1.05]' type='button'>Sign In</button>
+                        <button onClick={this.active}className='bg-blue-500 rounded h-11 mt-16 text-white w-full font-mulish hover:scale-[1.05]' type='button'>Sign In</button>
                     </form>
                 </section>
             </div>
