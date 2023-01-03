@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Footer from './component/Footer';
-import Header from './component/Header';
-import Movielist from './component/Movielist';
-import SearchAndShort from './component/ViewAll/SearchAndShort';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Movielist from './components/Movielist';
+import SearchAndShort from './components/ViewAll/SearchAndShort';
 
 
 class ViewAll extends Component {

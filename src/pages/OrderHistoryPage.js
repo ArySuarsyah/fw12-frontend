@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Profile from './component/profileComponent/Profile';
-import ProfilePageNav from './component/profileComponent/ProfilePageNav';
-import TicketHistory from './component/Ticket/TicketHistory';
-import Header from './component/Header';
-import Footer from './component/Footer';
+import Profile from './components/profileComponent/Profile';
+import ProfilePageNav from './components/profileComponent/ProfilePageNav';
+import TicketHistory from './components/Ticket/TicketHistory';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 

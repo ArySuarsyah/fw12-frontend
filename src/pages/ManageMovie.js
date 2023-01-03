@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Header from './component/Header'
-import FormMovie from './component/ManageMovie/FormMovie'
+import Header from './components/Header'
+import FormMovie from './components/ManageMovie/FormMovie'
 
 export default class ManageMovie extends Component {
     render() {

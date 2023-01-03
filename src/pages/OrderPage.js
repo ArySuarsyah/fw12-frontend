@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import React, { Fragment } from "react";
-import Header from "./component/Header";
-import Footer from "./component/Footer";
-import SeatGrid from "./component/orderPage/SeatGrid";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import SeatGrid from "./components/orderPage/SeatGrid";
 
 const OrderPage = () => {
 

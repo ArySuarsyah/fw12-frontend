@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from "react";
-import BookNow from "./component/BookNow";
-import Footer from "./component/Footer";
-import Header from "./component/Header";
-import MovieDetails from "./component/MovieDetails";
+import BookNow from "./components/BookNow";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import MovieDetails from "./components/MovieDetails";
 
 
 

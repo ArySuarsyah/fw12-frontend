@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import Footer from './component/Footer';
-import Header from './component/Header';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 const PaymentPage = () => {
     const navigate = useNavigate;

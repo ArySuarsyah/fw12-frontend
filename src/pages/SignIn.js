@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import InputEmail from './component/inputFormComponent/InputEmail';
-import InputPassword from './component/inputFormComponent/InputPassword';
+import InputEmail from './components/inputFormComponent/InputEmail';
+import InputPassword from './components/inputFormComponent/InputPassword';
 
 
 import { useDispatch } from 'react-redux';

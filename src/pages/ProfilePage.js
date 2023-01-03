@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Header from './component/Header'
-import Footer from './component/Footer'
-import Profile from './component/profileComponent/Profile'
-import ProfilPageNav from './component/profileComponent/ProfilePageNav'
-import DetailsInformation from './component/profileComponent/DetailsInformation'
-import AccountAndPrivacy from './component/profileComponent/AccountAndPrivacy'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Profile from './components/profileComponent/Profile'
+import ProfilPageNav from './components/profileComponent/ProfilePageNav'
+import DetailsInformation from './components/profileComponent/DetailsInformation'
+import AccountAndPrivacy from './components/profileComponent/AccountAndPrivacy'
 
 
 

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import InputEmail from './component/inputFormComponent/InputEmail';
-import InputFirstName from './component/inputFormComponent/InputFirstName';
-import InputLastName from './component/inputFormComponent/InputLastName';
-import InputPassword from './component/inputFormComponent/InputPassword';
-import InputPhone from './component/inputFormComponent/InputPhone';
+import InputEmail from './components/inputFormComponent/InputEmail';
+import InputFirstName from './components/inputFormComponent/InputFirstName';
+import InputLastName from './components/inputFormComponent/InputLastName';
+import InputPassword from './components/inputFormComponent/InputPassword';
+import InputPhone from './components/inputFormComponent/InputPhone';
 
 import { Link } from 'react-router-dom';
 

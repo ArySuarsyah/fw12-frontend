@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Footer from './component/Footer';
-import Header from './component/Header';
-import TicketStatus from './component/Ticket/TicketStatus';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import TicketStatus from './components/Ticket/TicketStatus';
 
 export default class TicketResult extends Component {
     render() {

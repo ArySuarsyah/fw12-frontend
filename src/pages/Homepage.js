@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Footer from "./component/Footer";
-import Header from "./component/Header";
-import Movielist from "./component/Movielist";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Movielist from "./components/Movielist";
 
 
 import { BsSearch } from "react-icons/bs";
